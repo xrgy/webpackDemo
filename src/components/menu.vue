@@ -7,8 +7,11 @@
             <span class="one-level-title">全部资源</span>
           </router-link>
         </li>
-        <li class="one-level one-level-li"><span class="one-level-title">按资源类别</span>
-          <i class="fa fa-angle-down" v-on:click="toggleTwoLevel($event)"></i>
+        <li class="one-level one-level-li">
+          <span class="one-level-title">按资源类别</span>
+          <span class="span-toggle">
+          <i class="fa fa-angle-down skin-color" v-on:click="toggleTwoLevel($event)"></i>
+          </span>
           <ul class="two-level-ul">
             <li v-on:click="clickResource($event,'network')">
               <router-link :to="{ path: '/network' ,query:{'type':'network'}}">
@@ -68,16 +71,16 @@
       debugger
       var _self = this;
       $('#menu-all').trigger("click");
-      _self.$router.push({path: '/',query:{'type':'all'}});
+      _self.$router.push({path: '/', query: {'type': 'all'}});
     },
     methods: {
       toggleTwoLevel: function (event) {
         var e = event.target;
         $(e).toggleClass('fa-angle-down fa-angle-up');
-        $(e).parent().children('ul').toggleClass('hidden');
+        $(e).parent().parent().children('ul').toggleClass('hidden');
       },
       clickResource: function (event, str) {
-          var _self = this;
+        var _self = this;
         var e = event.target;
         if (str === "") {
           //todo
@@ -150,5 +153,12 @@
 
   .two-level-ul {
     padding-left: 0;
+  }
+  .span-toggle{
+    float: right;
+    width: 20px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
   }
 </style>

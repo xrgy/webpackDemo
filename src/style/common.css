@@ -20,8 +20,11 @@ span{
   background: #777777;
   box-shadow: 2px 2px 2px 2px #555;
 }
-.def-btn-default{
+.def-btn-default {
   color: #555;
   background: #ffffff;
   box-shadow: 2px 2px 2px 2px #737373;
+}
+.skin-color{
+  color: #ec670b !important;
 }
