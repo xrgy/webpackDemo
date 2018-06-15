@@ -1,0 +1,50 @@
+{
+  "name": "monitor-portal",
+  "description": "A test Webpack vue-router project",
+  "version": "1.0.0",
+  "author": "gy <gaoyu3558@163.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --port 8081",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "express": "^4.16.3",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "font-awesome": "^4.7.0",
+    "font-awesome-webpack": "0.0.5-beta.2",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.3.1",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "url": "^0.11.0",
+    "url-loader": "^1.0.1",
+    "vue": "^2.5.11",
+    "vue-router": "^3.0.1",
+    "vue-style-loader": "^4.1.0",
+    "webpack-bundle-analyzer": "^2.13.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "popper.js": "^1.14.3",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}

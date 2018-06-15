@@ -1,0 +1,27 @@
+a:hover,
+a{
+  text-decoration: none;
+}
+span{
+  font: normal 14px Arial;
+}
+.hidden{
+  display: none;
+}
+.def-btn{
+  font-size: 12px;
+  width: 100px;
+  border: none;
+  border-radius: 2px;
+  outline: none
+}
+.def-btn-primary{
+  color: #ffffff;
+  background: #777777;
+  box-shadow: 2px 2px 2px 2px #555;
+}
+.def-btn-default{
+  color: #555;
+  background: #ffffff;
+  box-shadow: 2px 2px 2px 2px #737373;
+}
